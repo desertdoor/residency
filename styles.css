@@ -90,10 +90,11 @@ nav.nav-dark a:hover { opacity: 0.6; }
     background-position: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     padding: 20px;
+    padding-bottom: 25vh;
     color: white;
     position: relative;
 }
@@ -122,6 +123,7 @@ nav.nav-dark a:hover { opacity: 0.6; }
 .hero-content {
     z-index: 2;
     max-width: 900px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .photo-credit {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Rest + Resilience</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -22,37 +22,124 @@
             <a href="people.html">People</a>
             <a href="faq.html">FAQs</a>
             <a href="apply.html">Apply</a>
+            <a href="https://fundraising.fracturedatlas.org/the-desert-door-rest-resilience-artist-retreat" target="_blank">Donate</a>
         </div>
     </nav>
 
     <div class="about-container">
+
         <h1 class="about-title">About The Desert Door</h1>
+
+        <!-- Top 2x2 grid: living room, dining area, striped bed, fire pit -->
+        <div class="image-grid about-grid-top">
+            <img src="house/cd27c736-0884-4fbc-a107-22253e898cad.webp" alt="Living room with guitar on the wall" class="about-image lightbox-trigger">
+            <img src="house/ca292533-8b26-453a-9f26-21927ec3c2c7.webp" alt="Dining table with sliding glass door and colorful painting" class="about-image lightbox-trigger">
+            <img src="house/8c4f607a-c499-4247-81a3-ba42fb5f5a7c.webp" alt="King bed with striped blanket" class="about-image lightbox-trigger">
+            <img src="house/695A222A-2272-47B2-A998-DE20C2A6BEFF.jpg" alt="Four chairs around an outdoor fire pit" class="about-image lightbox-trigger">
+        </div>
 
         <p class="text-block">
             Founded in 2019, The Desert Door is a Rest + Resilience residency in Joshua Tree Village that supports interdisciplinary artists by easing the economic burden of making new work and offering a chance to germinate ideas, work thoughtfully, and get off the treadmill. Conceived as a small investment in cultural infrastructure and an alternative model of support, it is not a production residency. There are no required outcomes and no pressure to deliver a finished work, only time, quiet, and a well held place to recover attention, rebuild capacity, and reconnect to practice on human terms, with access to a dedicated studio with a sprung floor. Preference is given to artists who engage with dance or embodied practice in some way.
         </p>
 
-        <img src="cactus-flower.JPG" alt="A blooming cactus with vibrant pink flowers" class="about-image">
+        <img src="cactus-flower.JPG" alt="A blooming cactus with vibrant pink flowers" class="about-image lightbox-trigger">
 
         <p class="text-block">
-            The space is especially designed for small teams who want to bond, connect, and spend time together cooking, listening, talking, rehearsing, and workshopping material in a rhythm that includes hikes, rest, and outings. The property includes a four bedroom, two bath home in a tranquil neighborhood one minute from the village center and about six minutes from the West Entrance of Joshua Tree National Park, with open land nearby that gives the days a sense of expanse. A cook’s kitchen invites creativity and care through shared meals. The house also holds a record collection and a library of art, dance, stage, photography, and archival materials. Beyond the main house, residents have access to a dedicated studio with a sprung floor for movement and embodied practice, plus a back casita for writing or solitude away from the group. Outside, there is a fire pit, big skies, and a claw foot tub for stargazing and soaking.
+            The space is especially designed for small teams who want to bond, connect, and spend time together cooking, listening, talking, rehearsing, and workshopping material in a rhythm that includes hikes, rest, and outings. The property includes a four bedroom, two bath home in a tranquil neighborhood one minute from the village center and about six minutes from the West Entrance of Joshua Tree National Park, with open land nearby that gives the days a sense of expanse. A cook's kitchen invites creativity and care through shared meals. The house also holds a record collection and a library of art, dance, stage, photography, and archival materials. Beyond the main house, residents have access to a dedicated studio with a sprung floor for movement and embodied practice, plus a back casita for writing or solitude away from the group. Outside, there is a fire pit, big skies, and a claw foot tub for stargazing and soaking.
         </p>
 
+        <!-- Middle 4: remaining house photos -->
         <div class="image-grid">
-            <img src="studio.jpg" alt="Movement studio with a garage door and plants" class="about-image">
-            <img src="living-room.JPG" alt="Cozy living space with a desk and pink sofa" class="about-image">
-            <img src="patio.JPG" alt="Outdoor patio seating area" class="about-image">
-            <img src="desert-moon.JPG" alt="Desert landscape at dusk with a full moon" class="about-image">
+            <img src="house/09a5b517-cca8-4802-b95e-b5b64346de18.webp" alt="Kitchen with colorful painting" class="about-image lightbox-trigger">
+            <img src="house/12c41d3e-d361-483c-bcc8-98090a84a150.webp" alt="Bright bedroom with dream catcher" class="about-image lightbox-trigger">
+            <img src="house/507380d5-4844-46fd-9f61-9c3e3d75ef15.webp" alt="Outdoor clawfoot bathtub with desert view" class="about-image lightbox-trigger">
+            <img src="house/b3c6ddb2-f8e8-43bb-818d-48b08afd8e56.webp" alt="Bedroom with art posters and yellow blanket" class="about-image lightbox-trigger">
         </div>
 
         <p class="text-block">
             Joshua Tree is part of the offering, too. The village has a burgeoning artist community, and the desert landscape makes it easier to step outside everyday life and envision new possibilities. The Desert Door is a platform for art and experiences that brings together artists, writers, composers, media designers, creative technologists and thinkers to create projects in conversation with this place, and to make room for rich bonding time within artist teams.
         </p>
+
+        <!-- Bottom 4: original photos -->
+        <div class="image-grid">
+            <img src="studio.jpg" alt="Movement studio with a garage door and plants" class="about-image lightbox-trigger">
+            <img src="living-room.JPG" alt="Cozy living space with a desk and pink sofa" class="about-image lightbox-trigger">
+            <img src="patio.JPG" alt="Outdoor patio seating area" class="about-image lightbox-trigger">
+            <img src="desert-moon.JPG" alt="Desert landscape at dusk with a full moon" class="about-image lightbox-trigger">
+        </div>
+
     </div>
 
     <footer>
         Copyright 2026 The Desert Door Rest + Resilience Residency
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8592;</button>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#8594;</button>
+        <div class="lightbox-img-wrap">
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+
+    <script>
+        const triggers = Array.from(document.querySelectorAll('.lightbox-trigger'));
+        const lightbox = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        const lbClose = document.getElementById('lightbox-close');
+        const lbPrev = document.getElementById('lightbox-prev');
+        const lbNext = document.getElementById('lightbox-next');
+        let current = 0;
+
+        function openLightbox(index) {
+            current = index;
+            lbImg.src = triggers[current].src;
+            lbImg.alt = triggers[current].alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function showPrev() {
+            current = (current - 1 + triggers.length) % triggers.length;
+            lbImg.src = triggers[current].src;
+            lbImg.alt = triggers[current].alt;
+        }
+
+        function showNext() {
+            current = (current + 1) % triggers.length;
+            lbImg.src = triggers[current].src;
+            lbImg.alt = triggers[current].alt;
+        }
+
+        triggers.forEach((img, i) => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => openLightbox(i));
+        });
+
+        lbClose.addEventListener('click', closeLightbox);
+        lbPrev.addEventListener('click', showPrev);
+        lbNext.addEventListener('click', showNext);
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target === lightbox.querySelector('.lightbox-img-wrap')) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') showPrev();
+            if (e.key === 'ArrowRight') showNext();
+        });
+    </script>
 
 </body>
 </html>

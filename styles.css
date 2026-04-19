@@ -110,8 +110,10 @@ nav.nav-dark a:hover { opacity: 0.6; }
 
 /* --- HERO MODIFIERS --- */
 .hero.apply-hero {
-    background-image: url('image_2.png');
-    background-position: center bottom; 
+    background-image: url('background/cacti.jpg');
+    background-position: center bottom;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 .hero.apply-hero::after {
@@ -224,7 +226,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding-top: 15vh;
 }
 
 .apply-intro {
@@ -331,20 +332,21 @@ hr.divider {
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* NEW: Grid layout for the collection of images */
+/* 2-column grid for photo sections */
 .image-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 2rem; /* Space between images */
-    margin: 3rem 0; /* Space above and below the entire grid */
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
 }
 
-/* Ensure images within the grid fill their column and lose their individual margin */
+/* All images in grids: square crop */
 .image-grid .about-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures images fill the square without distortion */
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     margin: 0;
+    display: block;
 }
 
 
@@ -538,4 +540,78 @@ footer {
     /* --- Content sections --- */
     .content-section { padding: 4rem 1.5rem; }
     .about-container { padding: 0 1.5rem; }
+}
+
+/* --- LIGHTBOX --- */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 4rem 5rem;
+    box-sizing: border-box;
+}
+
+.lightbox-img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 2px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 0.5rem;
+    transition: color 0.2s;
+    z-index: 1001;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: #fff;
+}
+
+.lightbox-close {
+    top: 1.2rem;
+    right: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.lightbox-prev {
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.lightbox-next {
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
 }
